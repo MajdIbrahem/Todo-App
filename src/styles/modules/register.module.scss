@@ -1,0 +1,71 @@
+@import '../_mixins.scss';
+
+.page__wrapper{
+    padding-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formTitle {
+	color: var(--black-1);
+	font-size: 3.5rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+	text-transform: capitalize;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+	label {
+		font-size: 1.6rem;
+		color: var(--black-1);
+		margin: 10px 4px;
+		input {
+			border:none;
+			border-bottom: 1px solid var(--gray-2);margin-top: 0.5rem;
+			width: 100%;
+			padding: 1rem;
+			background-color: var(--white);
+			font-size: 1.6rem;
+			outline: none;
+		}
+
+		.error{
+			border-bottom: 1px solid red;margin-top: 0.5rem;
+		}
+	}
+	
+	p {
+		font-size: 12px;
+		margin: 5px ;
+		color: red;
+		cursor: pointer;
+	}
+
+	.navigate{
+		margin: 16px 0px;
+		color: var(--primaryPurple);
+	}
+}
+
+.card{
+	width: 400px;
+	@include smallDeviceSize {
+		width: 330px;
+	}
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  	transition: 0.3s;
+  	border-radius: 5px;
+	padding: 15px;
+	background-color: var(--white);;
+}
+
+.toaster{
+	background-color: black;
+	font-size: 25rem;
+	width: 100%;
+}
